@@ -1,4 +1,4 @@
-/* Elevolt Presentation — Design System */
+/* Elevolt Presentation — 1280×720 fixed viewport */
 :root {
   --elevolt-green: #00c853;
   --elevolt-green-dark: #00a843;
@@ -11,40 +11,50 @@
   --bg: #f8fafc;
   --card: #ffffff;
   --font: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  --radius: 12px;
-  --shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
-  --shadow-lg: 0 20px 50px rgba(0, 0, 0, 0.1);
+  --radius: 8px;
+  --shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  --slide-w: 1280px;
+  --slide-h: 720px;
+  --nav-h: 48px;
+  --content-h: calc(var(--slide-h) - var(--nav-h));
 }
 
 * {
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-body {
+html, body {
   margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
   font-family: var(--font);
   background: var(--bg);
   color: var(--text);
-  line-height: 1.5;
+  line-height: 1.4;
+}
+
+/* Fixed viewport wrapper */
+body {
+  width: var(--slide-w);
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 /* Navigation */
 .nav {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
-  right: 0;
-  height: 56px;
+  width: var(--slide-w);
+  max-width: 100%;
+  height: var(--nav-h);
   background: var(--dark);
   color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 24px;
+  padding: 0 20px;
   z-index: 100;
   box-shadow: var(--shadow);
 }
@@ -52,9 +62,9 @@ body {
 .nav-brand {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   font-weight: 800;
-  font-size: 18px;
+  font-size: 14px;
   letter-spacing: -0.02em;
   color: var(--elevolt-green);
 }
@@ -115,60 +125,75 @@ body {
   cursor: not-allowed;
 }
 
-/* Slides container */
+/* Slides container — exact 1280×720 fit */
 .slides {
-  padding-top: 56px;
+  position: absolute;
+  top: var(--nav-h);
+  left: 0;
+  width: var(--slide-w);
+  max-width: 100%;
+  height: var(--content-h);
+  overflow: hidden;
 }
 
 .slide {
-  min-height: calc(100vh - 56px);
-  padding: 40px 48px 60px;
+  width: 100%;
+  height: 100%;
+  padding: 10px 16px 10px;
   display: flex;
   flex-direction: column;
-  max-width: 1400px;
-  margin: 0 auto;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.slide .slide-grid-2 {
+  flex: 1;
+  min-height: 0;
 }
 
 .slide-header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 28px;
-  padding-bottom: 16px;
-  border-bottom: 2px solid var(--border);
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
 }
 
 .slide-title {
   margin: 0;
-  font-size: 28px;
+  font-size: 18px;
   font-weight: 800;
   color: var(--dark);
   letter-spacing: -0.02em;
+  line-height: 1.2;
 }
 
 .slide-subtitle {
-  font-size: 14px;
+  font-size: 10px;
   color: var(--text-muted);
   font-weight: 500;
-  margin-top: 6px;
+  margin-top: 2px;
 }
 
 .slide-stats {
   display: flex;
-  gap: 20px;
+  gap: 10px;
+  flex-shrink: 0;
 }
 
 .stat-badge {
   background: var(--card);
-  padding: 10px 18px;
-  border-radius: var(--radius);
+  padding: 4px 10px;
+  border-radius: 6px;
   box-shadow: var(--shadow);
-  border-left: 4px solid var(--elevolt-green);
+  border-left: 3px solid var(--elevolt-green);
   text-align: right;
 }
 
 .stat-badge .label {
-  font-size: 10px;
+  font-size: 8px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: var(--text-muted);
@@ -176,71 +201,84 @@ body {
 }
 
 .stat-badge .value {
-  font-size: 15px;
+  font-size: 11px;
   font-weight: 800;
   color: var(--dark);
-  margin-top: 2px;
+  margin-top: 0;
 }
 
 .stat-badge .value.green {
   color: var(--elevolt-green);
 }
 
-/* Cards & grids */
+/* Cards & grids — fit in 1280×720 */
 .slide-grid-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 24px;
+  gap: 10px;
   flex: 1;
+  min-height: 0;
 }
 
 .slide-grid-3 {
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
-  gap: 24px;
+  gap: 10px;
+  flex-shrink: 0;
+  min-height: 0;
 }
 
 .card {
   background: var(--card);
   border-radius: var(--radius);
-  padding: 24px;
+  padding: 10px 12px;
   box-shadow: var(--shadow);
   display: flex;
   flex-direction: column;
+  min-height: 0;
+  overflow: hidden;
 }
 
 .card-title {
-  font-size: 14px;
+  font-size: 11px;
   font-weight: 700;
   color: var(--dark);
-  margin-bottom: 16px;
+  margin-bottom: 6px;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
+  flex-shrink: 0;
 }
 
 .card-title .icon {
   color: var(--elevolt-green);
 }
 
-/* Tables */
+.slide-fill {
+  flex: 1;
+  min-height: 0;
+}
+
+/* Tables — compact */
 .data-table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 13px;
+  font-size: 10px;
+  table-layout: fixed;
 }
 
 .data-table th {
   text-align: left;
-  padding: 12px 16px;
+  padding: 4px 8px;
   background: #f8fafc;
   color: var(--text-muted);
   font-weight: 600;
   border-bottom: 1px solid var(--border);
+  font-size: 9px;
 }
 
 .data-table td {
-  padding: 12px 16px;
+  padding: 4px 8px;
   border-bottom: 1px solid var(--border);
   color: var(--text);
   font-variant-numeric: tabular-nums;
@@ -264,17 +302,22 @@ body {
   font-weight: 700;
 }
 
-/* Charts - ensure labels */
+/* Charts — fill card, no overflow */
 .chart-wrap {
   width: 100%;
-  height: 100%;
-  min-height: 220px;
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
 }
 
 .chart-wrap svg {
   width: 100%;
   height: 100%;
-  overflow: visible;
+  min-height: 0;
+  overflow: hidden;
+  flex: 1;
 }
 
 .axis-line {
@@ -289,7 +332,7 @@ body {
 }
 
 .axis-text {
-  font-size: 11px;
+  font-size: 9px;
   fill: var(--text-muted);
   font-weight: 500;
 }
@@ -303,21 +346,21 @@ body {
 }
 
 .bar-label {
-  font-size: 11px;
+  font-size: 9px;
   font-weight: 700;
   fill: var(--dark);
   text-anchor: middle;
 }
 
-/* Comparison blocks */
+/* Comparison blocks — compact */
 .compare-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  gap: 8px;
 }
 
 .compare-card {
-  padding: 20px;
+  padding: 8px 10px;
   border-radius: var(--radius);
   border: 1px solid var(--border);
   background: var(--card);
@@ -329,11 +372,11 @@ body {
 }
 
 .compare-card .head {
-  font-size: 12px;
+  font-size: 9px;
   font-weight: 800;
   text-transform: uppercase;
   color: var(--text-muted);
-  margin-bottom: 12px;
+  margin-bottom: 6px;
 }
 
 .compare-card.highlight .head {
@@ -341,8 +384,8 @@ body {
 }
 
 .compare-card .item {
-  font-size: 13px;
-  padding: 8px 0;
+  font-size: 10px;
+  padding: 3px 0;
   border-bottom: 1px solid var(--border);
   display: flex;
   justify-content: space-between;
@@ -352,29 +395,30 @@ body {
   border-bottom: none;
 }
 
-/* Footer notes - compact */
+/* Footer notes — compact */
 .slide-footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-  margin-top: 24px;
-  padding-top: 16px;
+  gap: 8px;
+  margin-top: 8px;
+  padding-top: 6px;
   border-top: 1px solid var(--border);
+  flex-shrink: 0;
 }
 
 .footer-note {
-  font-size: 12px;
+  font-size: 9px;
   color: var(--text-muted);
   background: rgba(255, 255, 255, 0.8);
-  padding: 12px;
-  border-radius: 8px;
+  padding: 6px 8px;
+  border-radius: 6px;
 }
 
 .footer-note strong {
   color: var(--dark);
   display: block;
-  margin-bottom: 4px;
-  font-size: 12px;
+  margin-bottom: 2px;
+  font-size: 9px;
 }
 
 .highlight-num {
@@ -385,19 +429,4 @@ body {
   font-weight: 700;
 }
 
-/* Responsive */
-@media (max-width: 1024px) {
-  .slide-grid-2,
-  .slide-grid-3 {
-    grid-template-columns: 1fr;
-  }
-
-  .slide-header {
-    flex-wrap: wrap;
-    gap: 16px;
-  }
-
-  .slide-stats {
-    flex-wrap: wrap;
-  }
-}
+/* Fixed 1280×720 viewport — no responsive scaling so slide always fits */
