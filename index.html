@@ -10,6 +10,21 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;" aria-hidden="true">
+    <symbol id="ico-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></symbol>
+    <symbol id="ico-trend" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></symbol>
+    <symbol id="ico-dollar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></symbol>
+    <symbol id="ico-target" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol>
+    <symbol id="ico-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></symbol>
+    <symbol id="ico-building" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M9 6h2v2H9zM13 6h2v2h-2zM9 10h2v2H9zM13 10h2v2h-2zM9 14h2v2H9zM13 14h2v2h-2z"/></symbol>
+    <symbol id="ico-leaf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8.04a7 7 0 0 1-14 0c0-3.86 1-6 2-8a15 15 0 0 0 8 10"/></symbol>
+    <symbol id="ico-zap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></symbol>
+    <symbol id="ico-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></symbol>
+    <symbol id="ico-layers" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/></symbol>
+    <symbol id="ico-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></symbol>
+    <symbol id="ico-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></symbol>
+    <symbol id="ico-box" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></symbol>
+  </svg>
 
   <nav class="nav">
     <div class="nav-brand">ELEVOLT</div>
@@ -29,23 +44,30 @@
           <p class="slide-subtitle">2% annual global capture from 6.4M non-regen units · Base $3,200/unit · Green $4,500/unit</p>
         </div>
         <div class="slide-stats">
-          <div class="stat-badge"><span class="label">Revenue uplift</span><span class="value green">+40% vs commodity</span></div>
-          <div class="stat-badge"><span class="label">Acquisition cost</span><span class="value">$3,000/unit</span></div>
-          <div class="stat-badge"><span class="label">Target ARR (Yr 10)</span><span class="value">$5.75 B</span></div>
+          <div class="stat-badge"><svg class="ico" aria-hidden="true"><use href="#ico-trend"/></svg><span><span class="label">Revenue uplift</span><span class="value green">+40% vs commodity</span></span></div>
+          <div class="stat-badge"><svg class="ico" aria-hidden="true"><use href="#ico-dollar"/></svg><span><span class="label">Acquisition cost</span><span class="value">$3,000/unit</span></span></div>
+          <div class="stat-badge"><svg class="ico" aria-hidden="true"><use href="#ico-target"/></svg><span><span class="label">Target ARR (Yr 10)</span><span class="value">$5.75 B</span></span></div>
         </div>
       </div>
       <div class="slide-grid-2">
         <div class="card">
-          <div class="card-title"><span class="icon">▣</span> Revenue composition (Billions)</div>
+          <div class="card-title"><svg class="ico" aria-hidden="true"><use href="#ico-chart"/></svg> Revenue composition (Billions)</div>
           <div class="chart-wrap">
             <svg viewBox="0 0 500 220" preserveAspectRatio="xMidYMid meet">
+              <line x1="40" y1="20" x2="40" y2="180" class="axis-line"/>
               <line x1="40" y1="180" x2="480" y2="180" class="axis-line"/>
+              <text x="18" y="100" class="axis-label" transform="rotate(-90, 18, 100)">Revenue ($B)</text>
+              <text x="260" y="208" text-anchor="middle" class="axis-label">Year</text>
+              <line x1="40" y1="155" x2="480" y2="155" class="grid-line"/>
               <line x1="40" y1="130" x2="480" y2="130" class="grid-line"/>
+              <line x1="40" y1="105" x2="480" y2="105" class="grid-line"/>
               <line x1="40" y1="80" x2="480" y2="80" class="grid-line"/>
-              <text x="35" y="180" text-anchor="end" class="axis-text">$0</text>
-              <text x="35" y="130" text-anchor="end" class="axis-text">$2B</text>
-              <text x="35" y="80" text-anchor="end" class="axis-text">$4B</text>
-              <text x="35" y="30" text-anchor="end" class="axis-text">$6B</text>
+              <text x="35" y="180" text-anchor="end" class="axis-text">0</text>
+              <text x="35" y="155" text-anchor="end" class="axis-text">1</text>
+              <text x="35" y="130" text-anchor="end" class="axis-text">2</text>
+              <text x="35" y="105" text-anchor="end" class="axis-text">4</text>
+              <text x="35" y="80" text-anchor="end" class="axis-text">5</text>
+              <text x="35" y="30" text-anchor="end" class="axis-text">6</text>
               <g transform="translate(100,0)">
                 <rect x="0" y="165" width="44" height="15" class="bar-dark"/>
                 <rect x="0" y="158" width="44" height="7" class="bar-elevolt"/>
@@ -71,16 +93,21 @@
           </div>
         </div>
         <div class="card">
-          <div class="card-title"><span class="icon">▣</span> Cumulative unit capture</div>
+          <div class="card-title"><svg class="ico" aria-hidden="true"><use href="#ico-layers"/></svg> Cumulative unit capture</div>
           <div class="chart-wrap">
             <svg viewBox="0 0 500 220" preserveAspectRatio="xMidYMid meet">
+              <line x1="40" y1="20" x2="40" y2="180" class="axis-line"/>
               <line x1="40" y1="180" x2="480" y2="180" class="axis-line"/>
-              <line x1="40" y1="130" x2="480" y2="130" class="grid-line"/>
-              <line x1="40" y1="80" x2="480" y2="80" class="grid-line"/>
+              <text x="15" y="100" class="axis-label" transform="rotate(-90, 15, 100)">Units (M)</text>
+              <text x="260" y="208" text-anchor="middle" class="axis-label">Year</text>
+              <line x1="40" y1="142" x2="480" y2="142" class="grid-line"/>
+              <line x1="40" y1="105" x2="480" y2="105" class="grid-line"/>
+              <line x1="40" y1="67" x2="480" y2="67" class="grid-line"/>
               <text x="35" y="180" text-anchor="end" class="axis-text">0</text>
-              <text x="35" y="130" text-anchor="end" class="axis-text">0.5M</text>
-              <text x="35" y="80" text-anchor="end" class="axis-text">1.0M</text>
-              <text x="35" y="30" text-anchor="end" class="axis-text">1.3M</text>
+              <text x="35" y="142" text-anchor="end" class="axis-text">0.4</text>
+              <text x="35" y="105" text-anchor="end" class="axis-text">0.8</text>
+              <text x="35" y="67" text-anchor="end" class="axis-text">1.2</text>
+              <text x="35" y="30" text-anchor="end" class="axis-text">1.3</text>
               <polygon points="120,168 250,115 380,52 380,180 120,180" fill="rgba(0,200,83,0.12)"/>
               <polyline points="120,168 250,115 380,52" fill="none" stroke="var(--elevolt-green)" stroke-width="3"/>
               <circle cx="120" cy="168" r="5" fill="white" stroke="var(--elevolt-green)" stroke-width="2"/>
@@ -98,7 +125,7 @@
       </div>
       <div class="slide-grid-3" style="margin-top:6px;">
         <div class="card">
-          <div class="card-title">10-year projections</div>
+          <div class="card-title"><svg class="ico" aria-hidden="true"><use href="#ico-trend"/></svg> 10-year projections</div>
           <table class="data-table">
             <thead>
               <tr><th>Period</th><th>Units captured</th><th>Base rev</th><th>Green rev</th><th>Total new annual rev</th></tr>
@@ -111,7 +138,7 @@
           </table>
         </div>
         <div class="card">
-          <div class="card-title">Green premium mechanics</div>
+          <div class="card-title"><svg class="ico" aria-hidden="true"><use href="#ico-leaf"/></svg> Green premium mechanics</div>
           <table class="data-table">
             <thead><tr><th>Metric</th><th style="text-align:right">Value</th></tr></thead>
             <tbody>
@@ -121,12 +148,20 @@
             </tbody>
           </table>
           <p style="font-size:9px;color:var(--text-muted);margin-top:4px;">40% more revenue per unit than ISP model. 100% green-locked, 2027 compliant.</p>
+          <div class="investor-note">
+            <strong>Why it matters for investors</strong>
+            <ul>
+              <li>Standard maintenance = commodity; <strong>Green-Locked = utility</strong> (higher stickiness).</li>
+              <li>Year 5: 640k units = <strong>$2.8B “new business”</strong>; Blitz margin 30%+ vs industry 18–20%.</li>
+              <li>Year 10: <strong>~20% of global ISP “dirty” base</strong> repossessed; remaining ISP portfolio becomes toxic.</li>
+            </ul>
+          </div>
         </div>
       </div>
       <div class="slide-footer">
-        <div class="footer-note"><strong>Valuation (Year 5)</strong> At 22× EBITDA, capture portfolio adds ~<span class="highlight-num">$18.5 B</span> to market cap.</div>
-        <div class="footer-note"><strong>ISP “hollowing out”</strong> By Year 10, OEM holds $5.75 B ARR previously held by independents.</div>
-        <div class="footer-note"><strong>Revenue quality</strong> Acquire units at ~$3,000 install vs 15× EBITDA M&A.</div>
+        <div class="footer-note"><svg class="ico" aria-hidden="true"><use href="#ico-zap"/></svg><strong>Financial “Magic Wand”</strong> 2% grab = most efficient growth. Acquire at <span class="highlight-num">$3k</span> install vs 15× EBITDA M&A.</div>
+        <div class="footer-note"><svg class="ico" aria-hidden="true"><use href="#ico-trend"/></svg><strong>Valuation (Year 5)</strong> 22× EBITDA → capture portfolio adds ~<span class="highlight-num">$18.5 B</span> market cap.</div>
+        <div class="footer-note"><svg class="ico" aria-hidden="true"><use href="#ico-leaf"/></svg><strong>Revenue quality</strong> 100% green-locked, 2027 safety compliant; highest-quality earnings in sector.</div>
       </div>
     </section>
 
@@ -138,33 +173,42 @@
           <p class="slide-subtitle">2% global ISP capture + 2% internal churn reduction · TKE + Elevolt</p>
         </div>
         <div class="slide-stats">
-          <div class="stat-badge"><span class="label">Blitz investment</span><span class="value">$250 M</span></div>
-          <div class="stat-badge"><span class="label">Payback</span><span class="value green">24 months</span></div>
-          <div class="stat-badge"><span class="label">Target cities</span><span class="value">NYC, London, Paris, Berlin</span></div>
+          <div class="stat-badge"><svg class="ico" aria-hidden="true"><use href="#ico-dollar"/></svg><span><span class="label">Blitz investment</span><span class="value">$250 M</span></span></div>
+          <div class="stat-badge"><svg class="ico" aria-hidden="true"><use href="#ico-calendar"/></svg><span><span class="label">Payback</span><span class="value green">24 months</span></span></div>
+          <div class="stat-badge"><svg class="ico" aria-hidden="true"><use href="#ico-building"/></svg><span><span class="label">Target cities</span><span class="value">NYC, London, Paris, Berlin</span></span></div>
         </div>
       </div>
       <div class="slide-grid-2">
         <div class="card">
-          <div class="card-title"><span class="icon">▣</span> Enterprise value expansion</div>
+          <div class="card-title"><svg class="ico" aria-hidden="true"><use href="#ico-trend"/></svg> Enterprise value expansion</div>
           <div class="chart-wrap">
             <svg viewBox="0 0 560 220" preserveAspectRatio="xMidYMid meet">
+              <line x1="50" y1="20" x2="50" y2="180" class="axis-line"/>
               <line x1="50" y1="180" x2="540" y2="180" class="axis-line"/>
-              <line x1="50" y1="130" x2="540" y2="130" class="grid-line"/>
-              <line x1="50" y1="80" x2="540" y2="80" class="grid-line"/>
-              <text x="40" y="180" text-anchor="end" class="axis-text">$0B</text>
-              <text x="40" y="130" text-anchor="end" class="axis-text">$25B</text>
-              <text x="40" y="80" text-anchor="end" class="axis-text">$50B</text>
-              <text x="40" y="30" text-anchor="end" class="axis-text">$75B</text>
+              <text x="25" y="100" class="axis-label" transform="rotate(-90, 25, 100)">EV ($B)</text>
+              <text x="290" y="210" text-anchor="middle" class="axis-label">Year</text>
+              <line x1="50" y1="156" x2="540" y2="156" class="grid-line"/>
+              <line x1="50" y1="132" x2="540" y2="132" class="grid-line"/>
+              <line x1="50" y1="108" x2="540" y2="108" class="grid-line"/>
+              <line x1="50" y1="84" x2="540" y2="84" class="grid-line"/>
+              <line x1="50" y1="60" x2="540" y2="60" class="grid-line"/>
+              <text x="42" y="180" text-anchor="end" class="axis-text">0</text>
+              <text x="42" y="156" text-anchor="end" class="axis-text">10</text>
+              <text x="42" y="132" text-anchor="end" class="axis-text">20</text>
+              <text x="42" y="108" text-anchor="end" class="axis-text">30</text>
+              <text x="42" y="84" text-anchor="end" class="axis-text">40</text>
+              <text x="42" y="60" text-anchor="end" class="axis-text">50</text>
+              <text x="42" y="36" text-anchor="end" class="axis-text">75</text>
               <path d="M 50 180 L 50 136 L 140 122 L 280 95 L 520 32 L 520 180 Z" fill="rgba(0,200,83,0.15)" stroke="none"/>
               <path d="M 50 136 L 140 122 L 280 95 L 520 32" fill="none" stroke="var(--elevolt-green)" stroke-width="3"/>
               <circle cx="50" cy="136" r="4" fill="white" stroke="var(--dark)" stroke-width="2"/>
-              <text x="60" y="132" class="bar-label">$22.7B</text>
+              <text x="60" y="132" class="bar-label">22.7</text>
               <circle cx="140" cy="122" r="4" fill="white" stroke="var(--dark)" stroke-width="2"/>
-              <text x="140" y="112" text-anchor="middle" class="bar-label">$29.5B</text>
+              <text x="140" y="112" text-anchor="middle" class="bar-label">29.5</text>
               <circle cx="280" cy="95" r="4" fill="white" stroke="var(--dark)" stroke-width="2"/>
-              <text x="280" y="82" text-anchor="middle" class="bar-label">$42.8B</text>
+              <text x="280" y="82" text-anchor="middle" class="bar-label">42.8</text>
               <circle cx="520" cy="32" r="4" fill="white" stroke="var(--dark)" stroke-width="2"/>
-              <text x="510" y="24" text-anchor="end" class="bar-label">$74.4B</text>
+              <text x="510" y="24" text-anchor="end" class="bar-label">74.4</text>
               <text x="50" y="198" text-anchor="middle" class="axis-text">2026</text>
               <text x="140" y="198" text-anchor="middle" class="axis-text">2028</text>
               <text x="280" y="198" text-anchor="middle" class="axis-text">2031</text>
@@ -172,37 +216,50 @@
             </svg>
           </div>
         </div>
-        <div class="card">
-          <div class="card-title">2026 market reality</div>
-          <div style="display:flex;flex-direction:column;gap:16px;">
+        <div class="card card-scroll-if-needed">
+          <div class="card-title"><svg class="ico" aria-hidden="true"><use href="#ico-calendar"/></svg> 2026 market reality</div>
+          <div class="card-body" style="display:flex;flex-direction:column;gap:6px;">
             <div>
-              <div style="display:flex;justify-content:space-between;font-size:12px;margin-bottom:6px;"><span>New installations</span><span class="axis-text">1.3% CAGR · $59.5 B</span></div>
-              <div style="height:24px;background:#f1f5f9;border-radius:8px;overflow:hidden;"><div style="width:37%;height:100%;background:#94a3b8;border-radius:8px"></div></div>
+              <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:4px;"><span>New installations</span><span class="axis-text">1.3% CAGR · $59.5 B</span></div>
+              <div style="height:20px;background:#f1f5f9;border-radius:6px;overflow:hidden;"><div style="width:37%;height:100%;background:#94a3b8;border-radius:6px"></div></div>
             </div>
             <div>
-              <div style="display:flex;justify-content:space-between;font-size:12px;margin-bottom:6px;"><span>Modernization (surgery)</span><span class="axis-text">7.9% · $15.2 B</span></div>
+              <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:4px;"><span>Modernization (surgery)</span><span class="axis-text">7.9% · $15.2 B</span></div>
               <div style="height:24px;background:#f1f5f9;border-radius:8px;overflow:hidden;"><div style="width:10%;height:100%;background:#64748b;border-radius:8px"></div></div>
             </div>
             <div>
               <div style="display:flex;justify-content:space-between;font-size:12px;margin-bottom:6px;"><span style="color:var(--elevolt-green);font-weight:700;">The “dirty” gap (plaster)</span><span class="axis-text">9.4% · $158.2 B</span></div>
-              <div style="height:24px;background:#f1f5f9;border-radius:8px;overflow:hidden;"><div style="width:100%;height:100%;background:var(--elevolt-green);border-radius:8px"></div></div>
-              <div style="font-size:10px;color:var(--text-muted);margin-top:4px;">Mandatory, high-velocity, green payback</div>
+              <div style="height:20px;background:#f1f5f9;border-radius:6px;overflow:hidden;"><div style="width:100%;height:100%;background:var(--elevolt-green);border-radius:6px"></div></div>
+              <div style="font-size:9px;color:var(--text-muted);margin-top:2px;">Mandatory, high-velocity, green payback</div>
+            <table class="data-table mini-table" style="margin-top:6px;font-size:9px;">
+              <thead><tr><th>Revenue type</th><th>Margin</th><th>Multiple</th><th>Val.</th></tr></thead>
+              <tbody>
+                <tr><td>Legacy ($3,200)</td><td>25–30%</td><td>12–14×</td><td>1.0×</td></tr>
+                <tr><td class="green">Green +$1,300</td><td>75–85%</td><td class="green">22–26×</td><td class="green">2.8×</td></tr>
+                <tr><td>Green-Lock ($4,500)</td><td>~45%</td><td>19–22×</td><td>1.7×</td></tr>
+              </tbody>
+            </table>
+            <div class="investor-note" style="margin-top:4px;">
+              <strong>2026 reality</strong> New install stagnating; modernization capped. <strong>“Dirty” $158.2B</strong> = mandatory green conversion.
+            </div>
+            <div style="margin-top:4px;padding:4px 6px;background:#f8fafc;border-radius:4px;border-left:3px solid var(--elevolt-green);font-size:8px;line-height:1.35;color:var(--text);">
+              <strong style="color:var(--dark);">Why it matters:</strong> 6.4M non-regen target · +$1,300 Green Premium = 40% rev vs commodity · 2027 mandatory · Green-Lock = utility.
             </div>
           </div>
         </div>
       </div>
       <div class="slide-grid-3" style="margin-top:6px;">
         <div class="card">
-          <div class="card-title">Revenue & portfolio projection</div>
+          <div class="card-title"><svg class="ico" aria-hidden="true"><use href="#ico-chart"/></svg> Revenue & portfolio projection</div>
           <table class="data-table">
             <thead>
-              <tr><th>Year</th><th>Total units</th><th>Base rev</th><th>Green rev</th><th>Total rev</th><th>EV</th></tr>
+              <tr><th>Year</th><th>Total units</th><th>Base rev</th><th>Green rev</th><th>Total rev</th><th>EV ($B)</th></tr>
             </thead>
             <tbody>
-              <tr><td>2026</td><td>1,400,000</td><td class="num">$4.48 B</td><td>—</td><td class="num">$4.48 B</td><td class="num">$22.7 B</td></tr>
-              <tr><td>2028</td><td>1,586,000</td><td class="num">$4.64 B</td><td class="green">+$620 M</td><td class="num">$5.26 B</td><td class="num">$29.5 B</td></tr>
-              <tr><td>2031</td><td>1,940,000</td><td class="num">$4.98 B</td><td class="green">+$1.68 B</td><td class="num">$6.66 B</td><td class="num">$42.8 B</td></tr>
-              <tr class="row-highlight"><td>2036</td><td>2,780,000</td><td class="num">$5.52 B</td><td class="green">+$4.26 B</td><td class="num">$9.78 B</td><td class="num">$74.4 B</td></tr>
+              <tr><td>2026</td><td>1.4M</td><td class="num">$4.48 B</td><td>—</td><td class="num">$4.48 B</td><td class="num">22.7</td></tr>
+              <tr><td>2028</td><td>1.59M</td><td class="num">$4.64 B</td><td class="green">+$620 M</td><td class="num">$5.26 B</td><td class="num">29.5</td></tr>
+              <tr><td>2031</td><td>1.94M</td><td class="num">$4.98 B</td><td class="green">+$1.68 B</td><td class="num">$6.66 B</td><td class="num">42.8</td></tr>
+              <tr class="row-highlight"><td>2036</td><td>2.78M</td><td class="num">$5.52 B</td><td class="green">+$4.26 B</td><td class="num">$9.78 B</td><td class="num">74.4</td></tr>
             </tbody>
           </table>
         </div>
@@ -212,14 +269,24 @@
             <div class="item"><span>Market cap</span><span>3–5% CAGR</span></div>
             <div class="item"><span>Multiplier</span><span>16× EBITDA</span></div>
             <div class="item"><span>ISP relation</span><span>Churn war</span></div>
+            <div class="item"><span>Asset profile</span><span>Hardware mfr</span></div>
           </div>
           <div class="compare-card highlight">
             <div class="head">Blitz OEM (TKE + Elevolt)</div>
             <div class="item"><span>Market cap</span><span class="green">12–15% CAGR</span></div>
             <div class="item"><span>Multiplier</span><span class="green">22×–25× EBITDA</span></div>
             <div class="item"><span>ISP relation</span><span>Systemic liquidation</span></div>
+            <div class="item"><span>Asset profile</span><span>Green infra utility</span></div>
           </div>
         </div>
+        <div class="investor-note" style="grid-column:1/-1;">
+          <strong>Investment takeaway</strong> Cost of acquisition: $3k hardware vs 15× EBITDA. Revenue quality: 100% green-locked, 2027 compliant.
+        </div>
+      </div>
+      <div class="slide-footer">
+        <div class="footer-note"><svg class="ico" aria-hidden="true"><use href="#ico-box"/></svg><strong>Base</strong> $3,200/unit · Green $4,500 · Incr. green $1,300. Higher stickiness vs commodity.</div>
+        <div class="footer-note"><svg class="ico" aria-hidden="true"><use href="#ico-trend"/></svg><strong>EV (Yr 10)</strong> $74.4 B from $22.7 B launch. 12–15% CAGR vs 3–5% traditional.</div>
+        <div class="footer-note"><svg class="ico" aria-hidden="true"><use href="#ico-zap"/></svg><strong>Blitz</strong> 2% ISP capture + 2% churn shield. Asset profile: green infra utility.</div>
       </div>
     </section>
 
@@ -228,25 +295,34 @@
       <div class="slide-header">
         <div>
           <h1 class="slide-title">Blitz City 10-Year Growth Model</h1>
-          <p class="slide-subtitle">NYC, London, Paris, Berlin · 2% capture + 2% churn shield</p>
+          <p class="slide-subtitle">From new sales to “asset reclamation” · NYC, London, Paris, Berlin</p>
         </div>
         <div class="slide-stats">
-          <div class="stat-badge"><span class="label">Investment</span><span class="value">$250 M</span></div>
-          <div class="stat-badge"><span class="label">Payback</span><span class="value green">Year 2</span></div>
-          <div class="stat-badge"><span class="label">10Y equity gain</span><span class="value green">+$14.8 B</span></div>
+          <div class="stat-badge"><svg class="ico" aria-hidden="true"><use href="#ico-dollar"/></svg><span><span class="label">Investment</span><span class="value">$250 M</span></span></div>
+          <div class="stat-badge"><svg class="ico" aria-hidden="true"><use href="#ico-calendar"/></svg><span><span class="label">Payback</span><span class="value green">Year 2</span></span></div>
+          <div class="stat-badge"><svg class="ico" aria-hidden="true"><use href="#ico-trend"/></svg><span><span class="label">10Y equity gain</span><span class="value green">+$14.8 B</span></span></div>
         </div>
+      </div>
+      <div class="investor-note" style="margin-bottom:6px;">
+        <strong>Blitz City</strong> $250M Elevolt investment fully realized in 24 months via ISP liquidation + internal churn immunization. Initial portfolio: ~117k ISP units | ~48k internal (Dirty).
       </div>
       <div class="slide-grid-2">
         <div class="card">
-          <div class="card-title"><span class="icon">▣</span> Equity value realization</div>
+          <div class="card-title"><svg class="ico" aria-hidden="true"><use href="#ico-trend"/></svg> Equity value realization</div>
           <div class="chart-wrap">
             <svg viewBox="0 0 500 220" preserveAspectRatio="xMidYMid meet">
+              <line x1="40" y1="20" x2="40" y2="180" class="axis-line"/>
               <line x1="40" y1="180" x2="480" y2="180" class="axis-line"/>
-              <line x1="40" y1="130" x2="480" y2="130" class="grid-line"/>
-              <line x1="40" y1="80" x2="480" y2="80" class="grid-line"/>
-              <text x="35" y="180" text-anchor="end" class="axis-text">$0</text>
-              <text x="35" y="130" text-anchor="end" class="axis-text">$5B</text>
-              <text x="35" y="80" text-anchor="end" class="axis-text">$15B</text>
+              <text x="15" y="100" class="axis-label" transform="rotate(-90, 15, 100)">Equity ($B)</text>
+              <text x="260" y="208" text-anchor="middle" class="axis-label">Year</text>
+              <line x1="40" y1="142" x2="480" y2="142" class="grid-line"/>
+              <line x1="40" y1="105" x2="480" y2="105" class="grid-line"/>
+              <line x1="40" y1="67" x2="480" y2="67" class="grid-line"/>
+              <text x="35" y="180" text-anchor="end" class="axis-text">0</text>
+              <text x="35" y="142" text-anchor="end" class="axis-text">5</text>
+              <text x="35" y="105" text-anchor="end" class="axis-text">10</text>
+              <text x="35" y="67" text-anchor="end" class="axis-text">15</text>
+              <text x="35" y="30" text-anchor="end" class="axis-text">15</text>
               <path d="M 40 180 L 40 177 L 180 177 L 300 118 L 460 32 L 460 180 Z" fill="rgba(0,200,83,0.12)"/>
               <polyline points="40,177 180,177 300,118 460,32" fill="none" stroke="var(--elevolt-green)" stroke-width="3"/>
               <circle cx="40" cy="177" r="4" fill="white" stroke="var(--elevolt-green)" stroke-width="2"/>
@@ -265,33 +341,40 @@
           </div>
         </div>
         <div class="card">
-          <div class="card-title"><span class="icon">▣</span> Revenue transformation</div>
+          <div class="card-title"><svg class="ico" aria-hidden="true"><use href="#ico-layers"/></svg> Revenue transformation</div>
           <div class="chart-wrap">
             <svg viewBox="0 0 500 220" preserveAspectRatio="xMidYMid meet">
+              <line x1="40" y1="20" x2="40" y2="180" class="axis-line"/>
               <line x1="40" y1="180" x2="480" y2="180" class="axis-line"/>
-              <text x="35" y="180" text-anchor="end" class="axis-text">$0</text>
-              <text x="35" y="30" text-anchor="end" class="axis-text">$1.75B</text>
+              <text x="15" y="100" class="axis-label" transform="rotate(-90, 15, 100)">Revenue ($B)</text>
+              <text x="260" y="208" text-anchor="middle" class="axis-label">Year</text>
+              <line x1="40" y1="142" x2="480" y2="142" class="grid-line"/>
+              <line x1="40" y1="105" x2="480" y2="105" class="grid-line"/>
+              <text x="35" y="180" text-anchor="end" class="axis-text">0</text>
+              <text x="35" y="142" text-anchor="end" class="axis-text">0.5</text>
+              <text x="35" y="105" text-anchor="end" class="axis-text">1.0</text>
+              <text x="35" y="30" text-anchor="end" class="axis-text">1.75</text>
               <g transform="translate(80,0)">
                 <rect x="0" y="136" width="40" height="44" class="bar-dark"/>
-                <text x="20" y="128" text-anchor="middle" class="bar-label">$0.53B</text>
+                <text x="20" y="128" text-anchor="middle" class="bar-label">0.53</text>
                 <text x="20" y="198" text-anchor="middle" class="axis-text">Yr 0</text>
               </g>
               <g transform="translate(190,0)">
                 <rect x="0" y="134" width="40" height="46" class="bar-dark"/>
                 <rect x="0" y="121" width="40" height="13" class="bar-elevolt"/>
-                <text x="20" y="115" text-anchor="middle" class="bar-label">$0.71B</text>
+                <text x="20" y="115" text-anchor="middle" class="bar-label">0.71</text>
                 <text x="20" y="198" text-anchor="middle" class="axis-text">Yr 2</text>
               </g>
               <g transform="translate(300,0)">
                 <rect x="0" y="129" width="40" height="51" class="bar-dark"/>
                 <rect x="0" y="95" width="40" height="34" class="bar-elevolt"/>
-                <text x="20" y="88" text-anchor="middle" class="bar-label">$1.02B</text>
+                <text x="20" y="88" text-anchor="middle" class="bar-label">1.02</text>
                 <text x="20" y="198" text-anchor="middle" class="axis-text">Yr 5</text>
               </g>
               <g transform="translate(410,0)">
                 <rect x="0" y="115" width="40" height="65" class="bar-dark"/>
                 <rect x="0" y="35" width="40" height="80" class="bar-elevolt"/>
-                <text x="20" y="28" text-anchor="middle" class="bar-label">$1.74B</text>
+                <text x="20" y="28" text-anchor="middle" class="bar-label">1.74</text>
                 <text x="20" y="198" text-anchor="middle" class="axis-text">Yr 10</text>
               </g>
             </svg>
@@ -300,7 +383,7 @@
       </div>
       <div class="slide-grid-3" style="margin-top:6px;">
         <div class="card">
-          <div class="card-title">Blitz City financial model</div>
+          <div class="card-title"><svg class="ico" aria-hidden="true"><use href="#ico-dollar"/></svg> Blitz City financial model</div>
           <table class="data-table">
             <thead>
               <tr><th>Period</th><th>Green-locked units</th><th>Base rev</th><th>Green rev</th><th>Total rev</th><th>Value</th></tr>
@@ -325,6 +408,9 @@
             <div class="item"><span>Effect</span><span>Dismantles ISP density</span></div>
           </div>
         </div>
+        <div class="investor-note" style="margin-top:6px;">
+          <strong>Total realization</strong> 165k green-locked = utility-grade equity, city-level dominance. Defensive = 100% margin retention; Offensive = high-premium ($4,500/yr).
+        </div>
       </div>
     </section>
 
@@ -336,21 +422,28 @@
           <p class="slide-subtitle">Non-regen “dirty” base vs TKE Blitz · ~21.5M unit global base (Feb 2026)</p>
         </div>
         <div class="slide-stats">
-          <div class="stat-badge"><span class="label">Total global “dirty” base</span><span class="value">10.26 M units</span></div>
+          <div class="stat-badge"><svg class="ico" aria-hidden="true"><use href="#ico-globe"/></svg><span><span class="label">Total global “dirty” base</span><span class="value">10.26 M units</span></span></div>
         </div>
       </div>
       <div class="slide-grid-2">
         <div class="card">
-          <div class="card-title"><span class="icon">▣</span> Global installed base — the “dirty” gap (units, millions)</div>
+          <div class="card-title"><svg class="ico" aria-hidden="true"><use href="#ico-globe"/></svg> Global installed base — the “dirty” gap (units, millions)</div>
           <div class="chart-wrap">
             <svg viewBox="0 0 700 240" preserveAspectRatio="xMidYMid meet">
+              <line x1="50" y1="15" x2="50" y2="200" class="axis-line"/>
               <line x1="50" y1="200" x2="680" y2="200" class="axis-line"/>
-              <line x1="50" y1="150" x2="680" y2="150" class="grid-line"/>
+              <text x="22" y="108" class="axis-label" transform="rotate(-90, 22, 108)">Units (M)</text>
+              <text x="365" y="218" text-anchor="middle" class="axis-label">Provider</text>
+              <line x1="50" y1="167" x2="680" y2="167" class="grid-line"/>
+              <line x1="50" y1="133" x2="680" y2="133" class="grid-line"/>
               <line x1="50" y1="100" x2="680" y2="100" class="grid-line"/>
+              <line x1="50" y1="67" x2="680" y2="67" class="grid-line"/>
               <text x="40" y="200" text-anchor="end" class="axis-text">0</text>
-              <text x="40" y="150" text-anchor="end" class="axis-text">3M</text>
-              <text x="40" y="100" text-anchor="end" class="axis-text">6M</text>
-              <text x="40" y="50" text-anchor="end" class="axis-text">9M</text>
+              <text x="40" y="167" text-anchor="end" class="axis-text">2</text>
+              <text x="40" y="133" text-anchor="end" class="axis-text">4</text>
+              <text x="40" y="100" text-anchor="end" class="axis-text">6</text>
+              <text x="40" y="67" text-anchor="end" class="axis-text">8</text>
+              <text x="40" y="35" text-anchor="end" class="axis-text">9</text>
               <g transform="translate(70,0)">
                 <rect x="0" y="152" width="55" height="48" class="bar-dark"/>
                 <rect x="0" y="123" width="55" height="29" class="bar-elevolt"/>
@@ -386,15 +479,18 @@
           </div>
         </div>
         <div class="card">
-          <div class="card-title">Target</div>
+          <div class="card-title"><svg class="ico" aria-hidden="true"><use href="#ico-target"/></svg> Target</div>
           <p style="font-size:28px;font-weight:800;color:var(--elevolt-green);margin:0;">69%</p>
           <p style="font-size:11px;font-weight:600;color:var(--dark);margin-top:4px;">Of ISP portfolio is non-regen</p>
           <p style="font-size:12px;color:var(--text-muted);line-height:1.5;">Independent sector holds <strong>6.4 M</strong> non-regen units. Capture high-density urban routes from ISPs.</p>
+          <div class="investor-note" style="margin-top:8px;">
+            <strong>Multiplier shift</strong> Legacy ($3,200): 12–14×, 1.0x val. Incremental green ($1,300): <span class="green">22–26×, 2.8x</span>. Green-Lock ($4,500): 19–22×, 1.7x blended.
+          </div>
         </div>
       </div>
       <div class="slide-grid-3" style="margin-top:6px;">
         <div class="card">
-          <div class="card-title">5-year global Blitz (2026–2031)</div>
+          <div class="card-title"><svg class="ico" aria-hidden="true"><use href="#ico-zap"/></svg> 5-year global Blitz (2026–2031)</div>
           <table class="data-table">
             <thead>
               <tr><th>Period</th><th>Total units</th><th>Incremental green rev</th><th>Total Blitz rev</th><th>Multiplier</th></tr>
@@ -409,11 +505,14 @@
           </table>
         </div>
         <div class="card">
-          <div class="card-title">Valuation multiplier</div>
+          <div class="card-title"><svg class="ico" aria-hidden="true"><use href="#ico-trend"/></svg> Valuation multiplier</div>
           <div style="display:flex;flex-direction:column;gap:12px;">
             <div style="display:flex;justify-content:space-between;padding:10px;background:#f8fafc;border-radius:8px;"><span class="axis-text">Year 1</span><span class="num">1.2×</span></div>
             <div style="display:flex;justify-content:space-between;padding:10px;background:#f8fafc;border-radius:8px;"><span class="axis-text">Year 3 (tech)</span><span class="num">1.8×</span></div>
             <div style="display:flex;justify-content:space-between;padding:12px;background:var(--elevolt-green-light);border-radius:8px;border-left:4px solid var(--elevolt-green);"><span class="num">Year 5 (sovereign)</span><span class="num" style="color:var(--elevolt-green);">2.6×</span></div>
+          </div>
+          <div class="investor-note" style="margin-top:6px;">
+            <strong>Historical (2015–25)</strong> Big 4 net growth 85% via ISP M&A. TKE: -790k churn, +540k buy-back (207% reliance). Blitz = alternative to “buying back churn.”
           </div>
         </div>
       </div>
@@ -427,17 +526,26 @@
           <p class="slide-subtitle">Acquired vs native “dirty” base · Service plan comparison</p>
         </div>
         <div class="slide-stats">
-          <div class="stat-badge"><span class="label">TKE growth via ISP M&A</span><span class="value">207% reliance</span></div>
+          <div class="stat-badge"><svg class="ico" aria-hidden="true"><use href="#ico-trend"/></svg><span><span class="label">TKE growth via ISP M&A</span><span class="value">207% reliance</span></span></div>
         </div>
       </div>
       <div class="slide-grid-2">
         <div class="card">
-          <div class="card-title"><span class="icon">▣</span> “Shadow” portfolio — % dirty base acquired from ISPs</div>
+          <div class="card-title"><svg class="ico" aria-hidden="true"><use href="#ico-layers"/></svg> “Shadow” portfolio — % dirty base acquired from ISPs</div>
           <div class="chart-wrap">
             <svg viewBox="0 0 500 220" preserveAspectRatio="xMidYMid meet">
+              <line x1="50" y1="20" x2="50" y2="180" class="axis-line"/>
               <line x1="50" y1="180" x2="480" y2="180" class="axis-line"/>
-              <text x="40" y="180" text-anchor="end" class="axis-text">0%</text>
-              <text x="40" y="30" text-anchor="end" class="axis-text">100%</text>
+              <text x="20" y="100" class="axis-label" transform="rotate(-90, 20, 100)">% Dirty acquired</text>
+              <text x="265" y="208" text-anchor="middle" class="axis-label">OEM</text>
+              <line x1="50" y1="142" x2="480" y2="142" class="grid-line"/>
+              <line x1="50" y1="105" x2="480" y2="105" class="grid-line"/>
+              <line x1="50" y1="67" x2="480" y2="67" class="grid-line"/>
+              <text x="40" y="180" text-anchor="end" class="axis-text">0</text>
+              <text x="40" y="142" text-anchor="end" class="axis-text">25</text>
+              <text x="40" y="105" text-anchor="end" class="axis-text">50</text>
+              <text x="40" y="67" text-anchor="end" class="axis-text">75</text>
+              <text x="40" y="30" text-anchor="end" class="axis-text">100</text>
               <g transform="translate(80,0)">
                 <rect x="0" y="30" width="50" height="150" fill="#e2e8f0"/>
                 <rect x="0" y="148" width="50" height="32" class="bar-elevolt"/>
@@ -469,27 +577,40 @@
           </div>
         </div>
         <div class="card">
-          <div class="card-title">Churn treadmill (2015–2025) — units lost vs bought back</div>
+          <div class="card-title"><svg class="ico" aria-hidden="true"><use href="#ico-arrow"/></svg> Churn treadmill (2015–2025) — Lost ↑ vs Bought ↓ by OEM</div>
+          <div style="font-size:8px;color:var(--text-muted);margin-bottom:4px;">Pink = units lost to ISPs · Dark = units bought back (M&A)</div>
           <div class="chart-wrap">
             <svg viewBox="0 0 500 200" preserveAspectRatio="xMidYMid meet">
+              <line x1="50" y1="10" x2="50" y2="190" class="axis-line"/>
               <line x1="50" y1="100" x2="480" y2="100" class="axis-line"/>
-              <text x="40" y="35" text-anchor="end" class="axis-text">Lost</text>
-              <text x="40" y="168" text-anchor="end" class="axis-text">Bought</text>
+              <text x="22" y="100" class="axis-label" transform="rotate(-90, 22, 100)">Units (k)</text>
+              <line x1="50" y1="55" x2="480" y2="55" class="grid-line"/>
+              <line x1="50" y1="78" x2="480" y2="78" class="grid-line"/>
+              <line x1="50" y1="122" x2="480" y2="122" class="grid-line"/>
+              <line x1="50" y1="145" x2="480" y2="145" class="grid-line"/>
+              <text x="42" y="35" text-anchor="end" class="axis-text">-1,000</text>
+              <text x="42" y="78" text-anchor="end" class="axis-text">-500</text>
+              <text x="42" y="100" text-anchor="end" class="axis-text">0</text>
+              <text x="42" y="122" text-anchor="end" class="axis-text">+500</text>
               <g transform="translate(90,0)">
                 <rect x="0" y="32" width="38" height="68" fill="#fecaca"/>
                 <rect x="0" y="100" width="38" height="40" class="bar-dark"/>
+                <text x="19" y="25" text-anchor="middle" style="font-size:8px;fill:#b91c1c;">-1,040k</text>
+                <text x="19" y="148" text-anchor="middle" style="font-size:8px;fill:var(--dark);">+580k</text>
                 <text x="19" y="198" text-anchor="middle" class="axis-text">Otis</text>
               </g>
               <g transform="translate(190,0)">
                 <rect x="0" y="52" width="38" height="48" fill="#fecaca"/>
                 <rect x="0" y="100" width="38" height="35" class="bar-dark"/>
+                <text x="19" y="45" text-anchor="middle" style="font-size:8px;fill:#b91c1c;">-740k</text>
+                <text x="19" y="148" text-anchor="middle" style="font-size:8px;fill:var(--dark);">+490k</text>
                 <text x="19" y="198" text-anchor="middle" class="axis-text">Schindler</text>
               </g>
               <g transform="translate(300,0)">
                 <rect x="0" y="46" width="38" height="54" fill="#fecaca"/>
                 <rect x="0" y="100" width="38" height="38" class="bar-dark"/>
-                <text x="19" y="38" text-anchor="middle" style="font-size:10px;font-weight:700;fill:#b91c1c;">-790k</text>
-                <text x="19" y="148" text-anchor="middle" style="font-size:10px;font-weight:700;fill:var(--dark);">+540k</text>
+                <text x="19" y="38" text-anchor="middle" style="font-size:9px;font-weight:700;fill:#b91c1c;">-790k</text>
+                <text x="19" y="148" text-anchor="middle" style="font-size:9px;font-weight:700;fill:var(--dark);">+540k</text>
                 <text x="19" y="198" text-anchor="middle" class="axis-text">TKE</text>
               </g>
             </svg>
@@ -498,7 +619,7 @@
       </div>
       <div style="margin-top:6px;">
         <div class="card">
-          <div class="card-title">Service plan comparison — “plaster” tiers (base $3,200/year)</div>
+          <div class="card-title"><svg class="ico" aria-hidden="true"><use href="#ico-leaf"/></svg> Service plan comparison — “plaster” tiers (base $3,200/year)</div>
           <table class="data-table">
             <thead>
               <tr><th>Feature</th><th>Green (Capex)</th><th style="background:var(--elevolt-green-light);border-left:3px solid var(--elevolt-green);">Green Edge Plus (Blitz)</th></tr>
@@ -510,6 +631,9 @@
               <tr><td class="num">Hook</td><td>Equity value increase</td><td class="green">Compliance & savings for $0</td></tr>
             </tbody>
           </table>
+          <div class="investor-note" style="margin-top:8px;">
+            <strong>Engine & fuel</strong> $250M IP = engine. Green Edge Plus = fuel; removes barrier: $0 upfront. Target: Green = owner-occupiers/Gov; Edge Plus = REITs/ISPs (high velocity). By Yr 10, $2.4B incremental rev = TKE at $75B+ while others fight “oil and grease” margins.
+          </div>
         </div>
       </div>
     </section>
@@ -522,30 +646,41 @@
           <p class="slide-subtitle">2% grab + 2% shield · Month 16 break-even</p>
         </div>
         <div class="slide-stats">
-          <div class="stat-badge"><span class="label">Break-even</span><span class="value green">Month 16</span></div>
-          <div class="stat-badge"><span class="label">Net profit (Yr 10)</span><span class="value green">+$12.4 B</span></div>
-          <div class="stat-badge"><span class="label">Target valuation</span><span class="value">$75 B+</span></div>
+          <div class="stat-badge"><svg class="ico" aria-hidden="true"><use href="#ico-calendar"/></svg><span><span class="label">Break-even</span><span class="value green">Month 16</span></span></div>
+          <div class="stat-badge"><svg class="ico" aria-hidden="true"><use href="#ico-dollar"/></svg><span><span class="label">Net profit (Yr 10)</span><span class="value green">+$12.4 B</span></span></div>
+          <div class="stat-badge"><svg class="ico" aria-hidden="true"><use href="#ico-target"/></svg><span><span class="label">Target valuation</span><span class="value">$75 B+</span></span></div>
         </div>
       </div>
       <div class="slide-grid-2">
         <div class="card">
-          <div class="card-title"><span class="icon">▣</span> Payback logic — cash flow to break-even</div>
+          <div class="card-title"><svg class="ico" aria-hidden="true"><use href="#ico-trend"/></svg> Payback logic — cash flow to break-even</div>
           <div class="chart-wrap">
             <svg viewBox="0 0 640 240" preserveAspectRatio="xMidYMid meet">
-              <line x1="50" y1="150" x2="620" y2="150" stroke="var(--text)" stroke-width="1" stroke-dasharray="4"/>
+              <line x1="50" y1="20" x2="50" y2="200" class="axis-line"/>
               <line x1="50" y1="200" x2="620" y2="200" class="axis-line"/>
-              <text x="40" y="200" text-anchor="end" class="axis-text">-$250M</text>
-              <text x="40" y="150" text-anchor="end" class="axis-text">$0</text>
-              <text x="40" y="50" text-anchor="end" class="axis-text">$2.1B</text>
+              <text x="22" y="105" class="axis-label" transform="rotate(-90, 22, 105)">Cash flow ($M)</text>
+              <text x="335" y="218" text-anchor="middle" class="axis-label">Time</text>
+              <line x1="50" y1="167" x2="620" y2="167" class="grid-line"/>
+              <line x1="50" y1="133" x2="620" y2="133" class="grid-line"/>
+              <line x1="50" y1="100" x2="620" y2="100" class="grid-line"/>
+              <line x1="50" y1="67" x2="620" y2="67" class="grid-line"/>
+              <text x="42" y="200" text-anchor="end" class="axis-text">-250</text>
+              <text x="42" y="167" text-anchor="end" class="axis-text">-100</text>
+              <text x="42" y="133" text-anchor="end" class="axis-text">0</text>
+              <text x="42" y="100" text-anchor="end" class="axis-text">1B</text>
+              <text x="42" y="67" text-anchor="end" class="axis-text">2B</text>
+              <line x1="50" y1="150" x2="620" y2="150" stroke="var(--text)" stroke-width="1" stroke-dasharray="4"/>
               <path d="M 50 200 Q 120 200 180 150 T 380 50" fill="none" stroke="var(--elevolt-green)" stroke-width="3"/>
               <circle cx="50" cy="200" r="5" fill="#ef4444" stroke="white" stroke-width="2"/>
-              <text x="60" y="212" class="axis-text" style="fill:#b91c1c;">Launch -$250M</text>
+              <text x="60" y="212" class="axis-text" style="fill:#b91c1c;">-250</text>
               <circle cx="180" cy="150" r="6" fill="var(--elevolt-green)" stroke="var(--dark)" stroke-width="2"/>
-              <text x="180" y="132" text-anchor="middle" class="bar-label">Month 16: BE</text>
+              <text x="180" y="132" text-anchor="middle" class="bar-label">0 (BE)</text>
               <circle cx="380" cy="50" r="5" fill="var(--elevolt-green)" stroke="white" stroke-width="2"/>
-              <text x="380" y="38" text-anchor="middle" class="bar-label">Yr 5: $2.1B</text>
-              <text x="100" y="188" class="axis-text">Investment</text>
-              <text x="280" y="118" class="axis-text" style="fill:var(--elevolt-green);">Equity expansion</text>
+              <text x="380" y="38" text-anchor="middle" class="bar-label">2.1B</text>
+              <text x="50" y="198" text-anchor="middle" class="axis-text">0</text>
+              <text x="180" y="198" text-anchor="middle" class="axis-text">Mo 16</text>
+              <text x="380" y="198" text-anchor="middle" class="axis-text">Yr 5</text>
+              <text x="500" y="198" text-anchor="middle" class="axis-text">Yr 10</text>
             </svg>
           </div>
         </div>
@@ -560,25 +695,47 @@
               <tr><td class="num">Effective net cost to client</td><td style="text-align:right" class="green">-$3,020</td></tr>
             </tbody>
           </table>
+          <div class="investor-note" style="margin-top:6px;">
+            <strong>Shield</strong> Building saves $2,500 energy + $5,000 carbon avoided → net cost lower than ISP; churn drops 2%. <strong>Grab</strong> 128k ISP units/yr “sniped”; ISP can’t match (no IP, can’t absorb $3k on $3,200 contract).
+          </div>
+          <table class="data-table mini-table" style="margin-top:8px;font-size:9px;">
+            <thead><tr><th>Grab mechanics</th><th>Value</th></tr></thead>
+            <tbody>
+              <tr><td>ISP units captured/yr</td><td class="num">128,000</td></tr>
+              <tr><td>Offer to buildings</td><td>Zero-dollar upgrade</td></tr>
+              <tr><td>Hardware payback (premium $1,280/yr)</td><td>2.3 years</td></tr>
+              <tr><td>Units to cover $250M IP</td><td class="green">195,000</td></tr>
+            </tbody>
+          </table>
         </div>
       </div>
       <div class="slide-grid-3" style="margin-top:6px;">
         <div class="card">
-          <div class="card-title">10-year Blitz financials</div>
+          <div class="card-title"><svg class="ico" aria-hidden="true"><use href="#ico-chart"/></svg> 10-year Blitz financials</div>
           <table class="data-table">
             <thead>
-              <tr><th>Period</th><th>Green units (cum.)</th><th>Incremental green rev</th><th>Payback status</th><th>Multiplier</th></tr>
+              <tr><th>Period</th><th>Green units (cum.)</th><th>Incr. green rev</th><th>Payback status</th><th>Mult.</th></tr>
             </thead>
             <tbody>
-              <tr><td>Year 1</td><td class="num">~156,000</td><td class="num">$185 M</td><td>Outlay $250 M</td><td>1.2×</td></tr>
-              <tr><td>Year 2</td><td class="num">~316,000</td><td class="num">$380 M</td><td class="green">Recovered</td><td>1.5×</td></tr>
-              <tr><td>Year 5</td><td class="num">~826,000</td><td class="num">$1.05 B</td><td class="green">Net profit $2.1 B</td><td>2.2×</td></tr>
-              <tr class="row-highlight"><td>Year 10</td><td class="num">1,850,000</td><td class="num">$2.40 B</td><td class="green">Net profit $12.4 B</td><td>3.5×</td></tr>
+              <tr><td>Year 1</td><td class="num">~156k</td><td class="num">$185 M</td><td>Outlay $250 M</td><td>1.2×</td></tr>
+              <tr><td>Year 2</td><td class="num">~316k</td><td class="num">$380 M</td><td class="green">Recovered</td><td>1.5×</td></tr>
+              <tr><td>Year 5</td><td class="num">~826k</td><td class="num">$1.05 B</td><td class="green">Net $2.1 B</td><td>2.2×</td></tr>
+              <tr class="row-highlight"><td>Year 10</td><td class="num">1.85M</td><td class="num">$2.40 B</td><td class="green">Net $12.4 B</td><td>3.5×</td></tr>
             </tbody>
           </table>
         </div>
         <div class="card">
-          <p style="font-size:13px;color:var(--text-muted);margin:0;"><strong style="color:var(--dark);">Engine & fuel:</strong> $250 M IP is the engine; Green Edge Plus (zero upfront) is the fuel that drives the 2% ISP capture.</p>
+          <p style="font-size:9px;color:var(--dark);font-weight:700;margin:0;">Payback milestones</p>
+          <ul style="font-size:9px;color:var(--text-muted);margin:4px 0 0 14px;padding:0;line-height:1.4;">
+            <li>First <strong>195k</strong> units (Shield + Grab) = $250M covered</li>
+            <li><strong>June 2027</strong> = break-even (Month 16)</li>
+            <li>$1,280/yr premium → $3k hardware in <strong>2.3 yrs</strong></li>
+          </ul>
+          <p style="font-size:9px;color:var(--dark);font-weight:700;margin:8px 0 0;">Two ways to win</p>
+          <ul style="font-size:9px;color:var(--text-muted);margin:2px 0 0 14px;padding:0;line-height:1.4;">
+            <li><strong>Green</strong> = pay now, high-margin cash</li>
+            <li><strong>Edge Plus</strong> = free fix, green-lock, max multiplier</li>
+          </ul>
         </div>
       </div>
     </section>
@@ -591,8 +748,8 @@
           <p class="slide-subtitle">Year 10: from “churn war” to systemic liquidation</p>
         </div>
         <div class="slide-stats">
-          <div class="stat-badge"><span class="label">Revenue (Yr 10)</span><span class="value">$9.78 B</span></div>
-          <div class="stat-badge"><span class="label">Enterprise value</span><span class="value green">$74.4 B</span></div>
+          <div class="stat-badge"><svg class="ico" aria-hidden="true"><use href="#ico-dollar"/></svg><span><span class="label">Revenue (Yr 10)</span><span class="value">$9.78 B</span></span></div>
+          <div class="stat-badge"><svg class="ico" aria-hidden="true"><use href="#ico-trend"/></svg><span><span class="label">Enterprise value</span><span class="value green">$74.4 B</span></span></div>
         </div>
       </div>
       <div class="compare-grid" style="margin-bottom:8px;">
@@ -612,36 +769,51 @@
         </div>
       </div>
       <div class="card slide-fill">
-        <div class="card-title"><span class="icon">▣</span> Value bridge 2026 → 2036 (EV)</div>
+        <div class="card-title"><svg class="ico" aria-hidden="true"><use href="#ico-arrow"/></svg> Value bridge 2026 → 2036 (EV)</div>
         <div class="chart-wrap">
           <svg viewBox="0 0 720 200" preserveAspectRatio="xMidYMid meet">
+            <line x1="50" y1="10" x2="50" y2="180" class="axis-line"/>
             <line x1="50" y1="180" x2="700" y2="180" class="axis-line"/>
+            <text x="25" y="95" class="axis-label" transform="rotate(-90, 25, 95)">EV ($B)</text>
+            <text x="50" y="208" text-anchor="start" class="axis-text" style="font-size:9px;fill:var(--text-muted);">Phase →</text>
+            <line x1="50" y1="144" x2="700" y2="144" class="grid-line"/>
+            <line x1="50" y1="108" x2="700" y2="108" class="grid-line"/>
+            <line x1="50" y1="72" x2="700" y2="72" class="grid-line"/>
+            <line x1="50" y1="36" x2="700" y2="36" class="grid-line"/>
+            <text x="42" y="180" text-anchor="end" class="axis-text">0</text>
+            <text x="42" y="144" text-anchor="end" class="axis-text">20</text>
+            <text x="42" y="108" text-anchor="end" class="axis-text">40</text>
+            <text x="42" y="72" text-anchor="end" class="axis-text">60</text>
+            <text x="42" y="36" text-anchor="end" class="axis-text">80</text>
             <rect x="60" y="120" width="80" height="60" class="bar-dark"/>
-            <text x="100" y="110" text-anchor="middle" class="bar-label">$22.7B</text>
+            <text x="100" y="110" text-anchor="middle" class="bar-label">22.7</text>
             <text x="100" y="198" text-anchor="middle" class="axis-text">Launch</text>
             <line x1="140" y1="120" x2="180" y2="100" stroke="var(--border)" stroke-width="1" stroke-dasharray="4"/>
             <rect x="180" y="100" width="80" height="20" class="bar-elevolt"/>
-            <text x="220" y="90" text-anchor="middle" class="bar-label">+$6.8B</text>
+            <text x="220" y="90" text-anchor="middle" class="bar-label">+6.8</text>
             <text x="220" y="198" text-anchor="middle" class="axis-text">Organic</text>
             <line x1="260" y1="100" x2="300" y2="50" stroke="var(--border)" stroke-width="1" stroke-dasharray="4"/>
             <rect x="300" y="50" width="80" height="50" class="bar-elevolt"/>
-            <text x="340" y="40" text-anchor="middle" class="bar-label">+$18.5B</text>
-            <text x="340" y="198" text-anchor="middle" class="axis-text">Blitz units</text>
+            <text x="340" y="40" text-anchor="middle" class="bar-label">+18.5</text>
+            <text x="340" y="198" text-anchor="middle" class="axis-text">Blitz</text>
             <line x1="380" y1="50" x2="420" y2="10" stroke="var(--border)" stroke-width="1" stroke-dasharray="4"/>
             <rect x="420" y="10" width="80" height="50" class="bar-elevolt"/>
-            <text x="460" y="0" text-anchor="middle" class="bar-label">+$26.4B</text>
+            <text x="460" y="0" text-anchor="middle" class="bar-label">+26.4</text>
             <text x="460" y="198" text-anchor="middle" class="axis-text">Multiple</text>
             <line x1="500" y1="10" x2="560" y2="10" stroke="var(--border)" stroke-width="1" stroke-dasharray="4"/>
             <rect x="560" y="10" width="100" height="170" class="bar-elevolt"/>
-            <text x="610" y="95" text-anchor="middle" class="bar-label" style="font-size:18px;fill:var(--dark);">$74.4B</text>
-            <text x="610" y="198" text-anchor="middle" class="axis-text">Year 10 EV</text>
+            <text x="610" y="95" text-anchor="middle" class="bar-label" style="font-size:14px;fill:var(--dark);">74.4</text>
+            <text x="610" y="198" text-anchor="middle" class="axis-text">Yr 10</text>
           </svg>
         </div>
       </div>
+      <div class="investor-note" style="margin-bottom:6px;">
+        <strong>Why it matters</strong> By Year 10, $2.4B incremental revenue isn’t just cash—it’s why TKE is valued $75B+ while other OEMs fight “oil and grease” margins. Green (pay now) + Green Edge Plus (free fix) = two ways to win; max valuation multiplier.
+      </div>
       <div class="slide-footer">
-        <div class="footer-note"><strong>Month 16</strong> $250 M IP recovered by Green Edge Plus premiums.</div>
+        <div class="footer-note"><svg class="ico" aria-hidden="true"><use href="#ico-calendar"/></svg><strong>Month 16</strong> $250 M IP recovered by Green Edge Plus premiums.</div>
         <div class="footer-note"><strong>“Dirty” gap</strong> Target 6.4 M non-regen ISP units (69% of their base).</div>
-        <div class="footer-note"><strong>Multiplier</strong> 16× → 25× creates ~$26 B in valuation re-rating.</div>
+        <div class="footer-note"><svg class="ico" aria-hidden="true"><use href="#ico-trend"/></svg><strong>Multiplier</strong> 16× → 25× creates ~$26 B in valuation re-rating.</div>
       </div>
     </section>
 
@@ -650,43 +822,56 @@
       <div class="slide-header">
         <div>
           <h1 class="slide-title">10-Year Market Value Transformation</h1>
-          <p class="slide-subtitle">From legacy manufacturer to sovereign utility</p>
+          <p class="slide-subtitle">Based on $22.7B (2026) baseline IPO · Legacy model → sovereign utility</p>
         </div>
         <div class="slide-stats">
-          <div class="stat-badge"><span class="label">Start (2026)</span><span class="value">$22.7 B</span></div>
-          <div class="stat-badge"><span class="label">End (2036)</span><span class="value green">$78.2 B</span></div>
+          <div class="stat-badge"><svg class="ico" aria-hidden="true"><use href="#ico-calendar"/></svg><span><span class="label">Start (2026)</span><span class="value">$22.7 B</span></span></div>
+          <div class="stat-badge"><svg class="ico" aria-hidden="true"><use href="#ico-trend"/></svg><span><span class="label">End (2036)</span><span class="value green">$78.2 B</span></span></div>
         </div>
       </div>
+      <div class="investor-note" style="margin-bottom:6px;">
+        <strong>“Hidden Gem” realized</strong> Green = pay now, save later (immediate high-margin cash). Green Edge Plus = free fix, long-term green-lock, max multiplier. Value created driven by re-rating (14× → 22.5×) + growth.
+      </div>
       <div class="card slide-fill" style="margin-bottom:6px;">
-        <div class="card-title"><span class="icon">▣</span> Value ascent — milestones & market cap</div>
+        <div class="card-title"><svg class="ico" aria-hidden="true"><use href="#ico-trend"/></svg> Value ascent — milestones & market cap</div>
         <div class="chart-wrap">
           <svg viewBox="0 0 1100 260" preserveAspectRatio="xMidYMid meet">
+            <line x1="50" y1="15" x2="50" y2="220" class="axis-line"/>
             <line x1="50" y1="220" x2="1050" y2="220" class="axis-line"/>
-            <line x1="50" y1="150" x2="1050" y2="150" class="grid-line"/>
-            <line x1="50" y1="80" x2="1050" y2="80" class="grid-line"/>
-            <text x="40" y="220" text-anchor="end" class="axis-text">$20B</text>
-            <text x="40" y="150" text-anchor="end" class="axis-text">$50B</text>
-            <text x="40" y="80" text-anchor="end" class="axis-text">$80B</text>
+            <text x="28" y="118" class="axis-label" transform="rotate(-90, 28, 118)">Market value ($B)</text>
+            <text x="550" y="242" text-anchor="middle" class="axis-label">Year</text>
+            <line x1="50" y1="188" x2="1050" y2="188" class="grid-line"/>
+            <line x1="50" y1="156" x2="1050" y2="156" class="grid-line"/>
+            <line x1="50" y1="124" x2="1050" y2="124" class="grid-line"/>
+            <line x1="50" y1="92" x2="1050" y2="92" class="grid-line"/>
+            <line x1="50" y1="60" x2="1050" y2="60" class="grid-line"/>
+            <text x="42" y="220" text-anchor="end" class="axis-text">20</text>
+            <text x="42" y="188" text-anchor="end" class="axis-text">30</text>
+            <text x="42" y="156" text-anchor="end" class="axis-text">40</text>
+            <text x="42" y="124" text-anchor="end" class="axis-text">50</text>
+            <text x="42" y="92" text-anchor="end" class="axis-text">60</text>
+            <text x="42" y="60" text-anchor="end" class="axis-text">70</text>
+            <text x="42" y="28" text-anchor="end" class="axis-text">80</text>
             <path d="M 80 210 L 320 190 L 600 155 L 1000 78 L 1000 220 L 80 220 Z" fill="rgba(0,200,83,0.12)"/>
             <path d="M 80 210 L 320 190 L 600 155 L 1000 78" fill="none" stroke="var(--elevolt-green)" stroke-width="3"/>
             <circle cx="80" cy="210" r="6" fill="white" stroke="var(--elevolt-green)" stroke-width="2"/>
             <text x="80" y="238" text-anchor="middle" class="axis-text">2026</text>
-            <text x="80" y="195" text-anchor="middle" class="bar-label">$22.7B</text>
+            <text x="80" y="195" text-anchor="middle" class="bar-label">22.7</text>
             <circle cx="320" cy="190" r="6" fill="white" stroke="var(--elevolt-green)" stroke-width="2"/>
             <text x="320" y="238" text-anchor="middle" class="axis-text">2028</text>
-            <text x="320" y="175" text-anchor="middle" class="bar-label">$31.2B</text>
+            <text x="320" y="175" text-anchor="middle" class="bar-label">31.2</text>
             <circle cx="600" cy="155" r="6" fill="white" stroke="var(--elevolt-green)" stroke-width="2"/>
             <text x="600" y="238" text-anchor="middle" class="axis-text">2031</text>
-            <text x="600" y="140" text-anchor="middle" class="bar-label">$45.8B</text>
+            <text x="600" y="140" text-anchor="middle" class="bar-label">45.8</text>
             <circle cx="1000" cy="78" r="8" fill="white" stroke="var(--elevolt-green)" stroke-width="3"/>
             <text x="1000" y="238" text-anchor="middle" class="axis-text">2036</text>
-            <text x="1000" y="62" text-anchor="middle" class="bar-label" style="font-size:11px;">$78.2B</text>
+            <text x="1000" y="62" text-anchor="middle" class="bar-label" style="font-size:11px;">78.2</text>
           </svg>
         </div>
       </div>
       <div class="slide-grid-3">
         <div class="card">
-          <div class="card-title">Financial transformation matrix</div>
+          <div class="card-title"><svg class="ico" aria-hidden="true"><use href="#ico-chart"/></svg> Financial transformation matrix</div>
           <table class="data-table">
             <thead>
               <tr><th>Phase</th><th>Milestone</th><th>Revenue</th><th>EBITDA multiple</th><th>Market value (EV)</th></tr>
@@ -700,7 +885,7 @@
           </table>
         </div>
         <div class="card" style="background:var(--dark);color:white;">
-          <div class="card-title" style="color:var(--elevolt-green);">Multiplier effect</div>
+          <div class="card-title" style="color:var(--elevolt-green);"><svg class="ico" aria-hidden="true"><use href="#ico-trend"/></svg> Multiplier effect</div>
           <div style="display:flex;justify-content:space-between;margin-bottom:6px;font-size:10px;"><span style="color:#94a3b8;">Legacy</span><span>14.0×</span></div>
           <div style="text-align:center;color:var(--elevolt-green);margin:4px 0;">↓</div>
           <div style="display:flex;justify-content:space-between;margin-bottom:6px;font-size:10px;"><span style="color:var(--elevolt-green);">Sovereign</span><span style="color:var(--elevolt-green);">22.5×</span></div>
